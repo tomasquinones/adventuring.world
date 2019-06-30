@@ -63,7 +63,7 @@ ul {
     margin: 10px 25px 0px 5px;
     border-radius: 5px;
     border: 1px solid gray;
-    box-shadow: -2px 2px 2px 1px gray;
+    box-shadow: -1px 1px 1px 1px gray;
 }
 
 ul:hover {
