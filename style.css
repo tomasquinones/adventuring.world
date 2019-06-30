@@ -52,7 +52,7 @@ h1 {
     min-width: 100%;
     position: absolute; 
     height: 100%;
-    border: none
+    border: none;
 }
 
 ul {
@@ -60,10 +60,10 @@ ul {
     width: 240px;
     list-style: none;
     padding: 5px 5px 5px 5px;
-    margin: 10px 25px 0px 0px;
+    margin: 10px 25px 0px 5px;
     border-radius: 5px;
     border: 1px solid gray;
-    box-shadow: -2 2px 2px 2px gray;
+    box-shadow: -2px 2px 2px 1px gray;
 }
 
 ul:hover {
@@ -73,6 +73,7 @@ ul:hover {
 ul: :active {
     background-color: blue;
 }
+
 li {
     font-family: monospace;
     font-size: 14px;
