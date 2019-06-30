@@ -16,6 +16,9 @@ h1 {
     font-size: 24px;
     z-index: 100;
     position: absolute;
+    left: 100px;
+    top: 10px;
+    margin: auto;
 }
 
 #wrapper {
@@ -36,12 +39,11 @@ h1 {
 }
 
 #list-panel {
-    font-family: monospace;
-    width: 250px;
-    padding: 15px;
+    width: 300px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    z-index: 10000000;
+    z-index: 1000;
     height: 100%;
 }
 
@@ -52,22 +54,12 @@ h1 {
     border: none
 }
 
-.placecard {
-    width: 100%;
-    min-height: 100px;
-    padding 3px;
-    margin: 5px;
-    background-color: #FAFAD2;
-    border-radius: 5px;
-    border: 1px solid #d3d3d3;
-    box-shadow: -2px 2px 2px 2px #a1a1a1;
-}
-
 ul {
     background-color: #fafad2;
     width: 240px;
     list-style: none;
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 25px 0px 0px;
     border-radius: 5px;
     border: 1px solid gray;
     box-shadow: -2 2px 2px 2px gray;
@@ -84,4 +76,7 @@ li {
     font-family: monospace;
     font-size: 14px;
     line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
