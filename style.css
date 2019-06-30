@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h1 {
+    font-family: monospace;
+    font-size: 24px;
+    z-index: 100;
+    position: absolute;
+}
+
+#wrapper {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#map {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+#list-panel {
+    font-family: monospace;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000000;
+    height: 100%;
+}
+
+#embed {
+    min-width: 100%;
+    position: absolute; 
+    height: 100%;
+    border: none
+}
+
+.placecard {
+    width: 100%;
+    min-height: 100px;
+    padding 3px;
+    margin: 5px;
+    background-color: #FAFAD2;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    box-shadow: -2px 2px 2px 2px #a1a1a1;
+}
+
+ul {
+    background-color: #fafad2;
+    width: 240px;
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: -2 2px 2px 2px gray;
+}
+
+ul:hover {
+    background-color: green;
+}
+
+ul: :active {
+    background-color: blue;
+}
+li {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 12px;
+}

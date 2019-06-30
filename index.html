@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <title>Adventuring.World - I've been here!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="googlesheet.js"></script>   
+    <script src="https://spreadsheets.google.com/feeds/cells/1QxoFD58eRe7d_fsq3dXeniA_1UExE4RAYfVhSB24WSI/1/public/values?alt=json-in-script&callback=doData"></script>
+
+<!-- <style type="text/css" media="print">
+  form {display: none;}
+</style> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Adventuring.World</h1>
+        <div id="map">
+                <iframe id="embed" src="http://maps.stamen.com/terrain/embed#03/37.7706/-122.3782"></iframe>
+        </div>
+        <div id="list-panel">
+            <h2>Locations:</h2>
+            <div id="data"/>                  
+        </div>
+    </div>
+</body>
+
+</html>
