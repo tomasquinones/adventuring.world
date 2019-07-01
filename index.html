@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Adventuring.World - I've been here!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="googlesheet.js"></script>   
     <script src="https://spreadsheets.google.com/feeds/cells/1QxoFD58eRe7d_fsq3dXeniA_1UExE4RAYfVhSB24WSI/1/public/values?alt=json-in-script&callback=doData"></script>
+
+    <!-- Scripts for Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 
 <body>
     <div id="wrapper">
         <h1>Adventuring.World <button id="myBtn">?</button></h1>
         <div id="map">
-                <iframe id="embed" src="http://maps.stamen.com/terrain/embed#03/37.7706/-122.3782"></iframe>
+               
         </div>
         <div id="list-panel">
             <h2>Locations:</h2>
             <div id="data"/>                  
         </div>
     </div>
-    <!-- Trigger/Open The Modal -->
 
+<!--mapbox script-->
+<script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidG9tYXMtcXVpbm9uZXMiLCJhIjoiY2p4aTBtYm8xMGs3OTNzbXYzZzQ4N2x3bCJ9.opEFsTazWexbWHalZBNPcg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
+        </script>
 
+<!-- Trigger/Open The Modal -->
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
