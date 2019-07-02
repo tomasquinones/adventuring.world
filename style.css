@@ -33,6 +33,8 @@ h1 {
 
 
 #map {
+    min-height: 400px;
+    min-width: 500px;
     padding: 0px;
     margin: 0px;
     width: 100%;
@@ -45,8 +47,7 @@ h1 {
     width: 350px;
     padding: 0px;
     z-index: 2;
-    max-height: 100%;
-    display: block;
+    min-height: 100%;
     overflow: scroll;
     border: 1px solid black;
 }
