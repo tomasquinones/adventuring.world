@@ -122,3 +122,56 @@ li {
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media (max-width: 700px) {
+    #wrapper {
+    
+    }
+
+    #map {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 400px;
+    }
+
+    #list-panel {
+        position: absolute;
+        top: 401px;
+        width: 100%;
+        padding: 0px;
+        z-index: 0;
+        height: 100%;
+        border: 0px solid black;
+        overflow: scroll;
+    }
+
+    ul {
+        background-color: #ebebc6;
+        width: 96%;
+        list-style: none;
+        padding: 5px 5px 5px 5px;
+        margin: 3px 0px 0px 3px;
+        border-radius: 3px;
+        border: 1px solid gray;
+        box-shadow: -1px 1px 1px 1px gray;
+    }
+    
+    ul:hover {
+        background-color: #dcdcdc;
+    }
+    
+    ul :active {
+        background-color: blue;
+    }
+    
+    li {
+        width: 96%;
+        font-family: monospace;
+        font-size: 14px;
+        line-height: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
