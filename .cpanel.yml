@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/adventuring.world/
+    - /bin/cp -R images $DEPLOYPATH
