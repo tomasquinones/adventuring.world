@@ -132,16 +132,15 @@ li {
         position: fixed;
         top: 0px;
         width: 100%;
-        height: 400px;
+        height: 55%;
     }
 
     #list-panel {
-        position: absolute;
-        top: 401px;
+        position: fixed;
+        top: 55%;
         width: 100%;
         padding: 0px;
-        z-index: 0;
-        height: 100%;
+        
         border: 0px solid black;
         overflow: scroll;
     }
@@ -159,7 +158,7 @@ li {
     
     ul:hover {
         background-color: #dcdcdc;
-    }
+    }   
     
     ul :active {
         background-color: blue;
