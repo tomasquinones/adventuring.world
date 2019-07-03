@@ -24,4 +24,4 @@ function addMap (){
     // map.touchZoomRotate.disableRotation();
 
     map.keyboard.enable();
-  }
+  };
