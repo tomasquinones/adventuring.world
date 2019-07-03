@@ -15,24 +15,21 @@
 
 <body>
     <div id="wrapper">
-        <h1>Adventuring.World <button id="myBtn">?</button></h1>
+        <h1 class="map-h1">Adventuring.World <button id="myBtn">?</button></h1>
         <div id="map">
                
         </div>
-        <div id="list-panel">
-            <h2>Locations:</h2>
-            <div id="data"/>                  
-        </div>
+        
     </div>
 
 <!--mapbox script-->
-<script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoidG9tYXMtcXVpbm9uZXMiLCJhIjoiY2p4aTBtYm8xMGs3OTNzbXYzZzQ4N2x3bCJ9.opEFsTazWexbWHalZBNPcg';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-        });
-        </script>
+<script src="mymapbox.js" />
+      <script>
+      $(window).on("load", function(){
+      addMap()
+      });
+      </script>
+</script>
 
 <!-- Trigger/Open The Modal -->
 <!-- The Modal -->
@@ -50,6 +47,9 @@
   </div>
 
 </div>
+
+<div>
+
 <script>
         // Get the modal
         var modal = document.getElementById("myModal");
