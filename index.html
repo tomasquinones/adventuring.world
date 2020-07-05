@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Adventuring.World - I've been here!</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="googlesheet.js"></script>   
-    <script src="https://spreadsheets.google.com/feeds/cells/1QxoFD58eRe7d_fsq3dXeniA_1UExE4RAYfVhSB24WSI/1/public/values?alt=json-in-script&callback=doData"></script>
+    // <script src="https://spreadsheets.google.com/feeds/cells/1QxoFD58eRe7d_fsq3dXeniA_1UExE4RAYfVhSB24WSI/1/public/values?alt=json-in-script&callback=doData"></script>
+    <script type="text/javascript" src="scripts/googlesheet.js"></script>
+    
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <script src="scripts/mymapbox.js"></script>
 
-    <!-- Scripts for Mapbox-->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-
+<title>Adventuring.World - Ive been here!</title>
 </head>
 
 <body>
     <div id="wrapper">
-        <h1 class="map-h1">Adventuring.World <button id="myBtn">?</button></h1>
-        <div id="map"> 
+        <h1 class="map-h1">Adventuring.World</h1>
+        <div id="map">
         </div>
         <div id="list-panel">
-          <div id="data"></div>
+            <div id="data">
+            </div>
         </div>
     </div>
 
 <!--mapbox script-->
-<script src="mymapbox.js"></script>
-      <script>
-      $(window).on("load", function(){
-      addMap()
-      });
-      </script>
+    <script>
+        $(window).on("load", function(){
+            addMap();
+        });
+    </script>
 
+<!-- get lat longs from spreadsheet -->
+    <script>
+        
+    </script>
 
+    
 </body>
 
 </html>
