@@ -19,9 +19,6 @@ let myData = {};
 const req = new XMLHttpRequest();
 
 
-
-
-
 req.open('GET', URL, true);
 req.send();
 
@@ -29,7 +26,7 @@ myData = JSON.parse(req.responseText);
 
 
 
-function addMap(){
+function addMap() {
     mapboxgl.accessToken = 'pk.eyJ1IjoidG9tYXMtcXVpbm9uZXMiLCJhIjoiY2p4aTBtYm8xMGs3OTNzbXYzZzQ4N2x3bCJ9.opEFsTazWexbWHalZBNPcg';
     let myMap = new mapboxgl.Map({
         container: 'map',
@@ -40,10 +37,10 @@ function addMap(){
         trackResize: true,
     });
 
-    myMap.addControl(new mapboxgl.NavigationControl({showCompass: true}), 'top-left');
-    myMap.addControl(new mapboxgl.ScaleControl({maxWidth: 500,unit: 'imperial'}));
+    myMap.addControl(new mapboxgl.NavigationControl({ showCompass: true }), 'top-left');
+    myMap.addControl(new mapboxgl.ScaleControl({ maxWidth: 500, unit: 'imperial' }));
 
     for (let i = 0; i < myData["results"].length; i++) {
-        new mapboxgl.Marker().setLngLat(myData["results"][i]["first_lng"], myData["results"][i]["first_lat"] ).addTo(myMap);
-     }
+        new mapboxgl.Marker().setLngLat(myData["results"][i]["first_lng"], myData["results"][i]["first_lat"]).addTo(myMap);
+    }
 };
