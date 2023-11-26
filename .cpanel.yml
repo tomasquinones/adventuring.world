@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/adventuring.world/
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/chinus/adventuring.world/
+    - cp -r * $DEPLOYPATH
